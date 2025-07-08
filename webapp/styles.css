@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);  /* Set opacity for content */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 80%;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, select, input {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultBox {
+    margin-top: 2rem;
+    background-color: #e8f5e9;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Ensure the container is centered and responsive */
+.container {
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure form elements scale dynamically */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Style for inputs and dropdowns */
+input, select {
+    padding: 2px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Take full width of the container */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Result box styling */
+#resultBox {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eafaf1;
+    border: 1px solid #d4eed8;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Ensure long text breaks to the next line */
+    max-width: 100%; /* Ensure it does not exceed the container width */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 700px) {
+    .container {
+        padding: 15px;
+        max-width: 90%; /* Reduce width to fit smaller screens */
+    }
+
+    #resultBox {
+        font-size: 16px; /* Reduce font size for smaller screens */
+        padding: 15px;
+    }
+
+    button {
+        font-size: 16px; /* Adjust button size */
+    }
+
+    input, select {
+        font-size: 14px; /* Adjust input size */
+    }
+}

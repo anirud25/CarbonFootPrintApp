@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Estimation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estimate Your Carbon Footprint</h1>
+        
+        <form id="carbonForm">
+            <label for="energySource">Energy Source:</label>
+            <select id="energySource">
+                <option value="" disabled selected>Select</option>
+                <option value="0">Renewable</option>
+                <option value="1">Mixed</option>
+                <option value="2">Non-Renewable</option>
+            </select>
+
+            <label for="dietType">Diet Type:</label>
+            <select id="dietType">
+                <option value="" disabled selected>Select</option>
+                <option value="0">Mostly Plant-Based</option>
+                <option value="1">Balanced</option>
+                <option value="2">Mostly Animal-Based</option>
+            </select>
+
+            <label for="transportMode">Transportation Mode:</label>
+            <select id="transportMode">
+                <option value="" disabled selected>Select</option>
+                <option value="0">Bike</option>
+                <option value="1">Public Transit</option>
+                <option value="2">Car</option>
+                <option value="3">Walk</option>
+            </select>
+
+            <label for="plasticUsage">Plastic Usage Frequency:</label>
+            <select id="plasticUsage">
+                <option value="" disabled selected>Select</option>
+                <option value="0">Rarely</option>
+                <option value="1">Sometimes</option>
+                <option value="2">Often</option>
+                <option value="3">Never</option>
+            </select>
+
+            <label for="disposalMethod">Waste Disposal Method:</label>
+            <select id="disposalMethod">
+                <option value="" disabled selected>Select</option>
+                <option value="0">Composting</option>
+                <option value="1">Recycling</option>
+                <option value="2">Landfill</option>
+                <option value="3">Combination</option>
+            </select>
+
+            <label for="electricityUsage">Monthly Electricity Consumption (kWh):</label>
+            <input type="number" id="electricityUsage" placeholder="e.g. 300">
+
+            <button type="submit" id="submitBtn">Estimate</button>
+        </form>
+
+        <div id="resultBox" class="hidden">
+            <h2>Estimated CO2 Emission:</h2>
+            <p id="carbonOutput"></p>
+            
+            <h3>Recommendations:</h3>
+            <div id="recommendationsOutput"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
